@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="stylescalculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <div class="sidebar">
+            <button onclick="switchSemester('semester1')" class="active">Semester 1(physics group)</button>
+            <button onclick="switchSemester('semester2')">Semester 2 (chemistry group)</button>
+            <button onclick="comingSoon()">Semester 3</button>
+            <button onclick="comingSoon()">Semester 4</button>
+            <button onclick="comingSoon()">Semester 5</button>
+            <button onclick="comingSoon()">Semester 6</button>
+            <button onclick="comingSoon()">Semester 7</button>
+            <button onclick="comingSoon()">Semester 8</button>
+        </div>
+        <div class="content">
+            <div id="semester1" class="semester-container">
+                <h2>Semester 1</h2>
+                <form>
+                    <label for="math1">Mathematics 1:</label>
+                    <input type="number" id="math1" placeholder="Enter marks (0-100)">
+
+                    <label for="physics">Physics:</label>
+                    <input type="number" id="physics" placeholder="Enter marks (0-100)">
+
+                    <label for="electrical">Electrical:</label>
+                    <input type="number" id="electrical" placeholder="Enter marks (0-100)">
+
+                    <label for="evs">EVS (Environmental Science):</label>
+                    <input type="number" id="evs" placeholder="Enter marks (0-100)">
+
+                    <label for="pps">Programming (PPS):</label>
+                    <input type="number" id="pps" placeholder="Enter marks (0-100)">
+
+                    <label for="physics_lab">Physics Lab:</label>
+                    <input type="number" id="physics_lab" placeholder="Enter marks (0-100)">
+
+                    <label for="graphics_lab">Graphics Lab:</label>
+                    <input type="number" id="graphics_lab" placeholder="Enter marks (0-100)">
+
+                    <label for="electrical_lab">Electrical Lab:</label>
+                    <input type="number" id="electrical_lab" placeholder="Enter marks (0-100)">
+
+                    <label for="pps_lab">PPS Lab:</label>
+                    <input type="number" id="pps_lab" placeholder="Enter marks (0-100)">
+                </form>
+                <button onclick="calculateCGPA(1)">Calculate CGPA</button>
+            </div>
+
+            <div id="semester2" class="semester-container hidden">
+                <h2>Semester 2</h2>
+                <form>
+                    <label for="math2">Mathematics 2:</label>
+                    <input type="number" id="math2" placeholder="Enter marks (0-100)">
+
+                    <label for="chemistry">Chemistry:</label>
+                    <input type="number" id="chemistry" placeholder="Enter marks (0-100)">
+
+                    <label for="electronics">Electronics:</label>
+                    <input type="number" id="electronics" placeholder="Enter marks (0-100)">
+
+                    <label for="mechanical">Mechanical:</label>
+                    <input type="number" id="mechanical" placeholder="Enter marks (0-100)">
+
+                    <label for="soft_skill">Soft Skills:</label>
+                    <input type="number" id="soft_skill" placeholder="Enter marks (0-100)">
+
+                    <label for="chemistry_lab">Chemistry Lab:</label>
+                    <input type="number" id="chemistry_lab" placeholder="Enter marks (0-100)">
+
+                    <label for="workshop_lab">Workshop Lab:</label>
+                    <input type="number" id="workshop_lab" placeholder="Enter marks (0-100)">
+
+                    <label for="electronics_lab">Electronics Lab:</label>
+                    <input type="number" id="electronics_lab" placeholder="Enter marks (0-100)">
+
+                    <label for="soft_skill_lab">Soft Skills Lab:</label>
+                    <input type="number" id="soft_skill_lab" placeholder="Enter marks (0-100)">
+                </form>
+                <button onclick="calculateCGPA(2)">Calculate CGPA</button>
+            </div>
+
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
